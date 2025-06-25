@@ -34,11 +34,11 @@
       "content": [
         {
           "type": "title",
-          "text": "TODO"
+          "text": "Credits"
         },
         {
           "type": "text",
-          "text": "- Host on GHP\n- Test on mobile\n- Add a 'credits' footer page to all pages (make a 'commonPages.json' file?)"
+          "text": "All programming done by me (Karl Henriksson)\n\nIcons and fonts from Google Fonts"
         }
       ]
     }
