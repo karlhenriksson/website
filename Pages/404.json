@@ -1,0 +1,17 @@
+{
+  "title": "404 - not found",
+  "pages": [
+    {
+      "content": [
+        {
+          "type": "title",
+          "text": "404 - not found"
+        },
+        {
+          "type": "text",
+          "text": "The webpage you requested doesn't exist."
+        }
+      ]
+    }
+  ]
+}

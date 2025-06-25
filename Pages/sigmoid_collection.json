@@ -1,0 +1,17 @@
+{
+  "title": "Sigmoid collection",
+  "pages": [
+    {
+      "content": [
+        {
+          "type": "title",
+          "text": "Sigmoid collection"
+        },
+        {
+          "type": "text",
+          "text": "A while back, I decided to start collecting sigmoids. I defined a sigmoid as a function that interpolates smoothly from one value to another as x varies, and to no one's surprise, there are a lot of different functions that satisfy that requirement. So in the end, I also decided that no two functions were allowed to be equivalent - so, no scaling and translating should be able to get the graphs to completely overlap. This is still a sizeable collection, so I decided to feature it here. All functions have been transformed to lerp from 0 to 1 in a somewhat similar fashion.\n\nLink: [https://www.desmos.com/calculator/1c10e1dd8c](https://www.desmos.com/calculator/1c10e1dd8c)\n\nYes, *technically* one of them only counts as a sigmoid as m approaches infinity, but I decided to count it anyway."
+        }
+      ]
+    }
+  ]
+}
