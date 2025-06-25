@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Home",
+    "link": "?page=home"
+  },
+  {
+    "name": "Desmos projects",
+    "link": "?page=desmos",
+    "children": [
+      {
+        "name": "Tetris",
+        "link": "?page=tetris"
+      },
+      {
+        "name": "3D renderers",
+        "link": "?page=3desmos"
+      },
+      {
+        "name": "Harmonograph",
+        "link": "?page=harmonograph"
+      },
+      {
+        "name": "Sigmoid collection",
+        "link": "?page=sigmoid_collection"
+      }
+    ]
+  },
+  {
+    "name": "Go to the GitHub repo",
+    "link": ""
+  }
+]

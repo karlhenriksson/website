@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Karl Henriksson</title>
+  </head>
+  <!-- https://properhoc.com as inspiration-->
+  <body>
+    <div id="header">
+      <div id="mainHeader">
+        <div id="branding" onclick="window.location.href = 'index.html'">
+          <img id="brandingImage" src="logo.png" />
+          <div id="brandingText">Karl Henriksson</div>
+        </div>
+        <img
+          id="openMenu"
+          src="menu.svg"
+          onclick="document.getElementById('menu').classList.toggle('hiddenMobile')"
+        />
+      </div>
+
+      <!-- Template for menu items -->
+      <div style="display: none" class="menuItem" id="menuItemTemplate">
+        <div class="menuItemDisplay">
+          <a href="index.html">Folder</a>
+          <img class="menuExpander" src="arrowDown.svg" />
+        </div>
+        <div class="folderContent hidden"></div>
+      </div>
+
+      <div id="menu" class="hiddenMobile"></div>
+
+      <!-- Populate the menu -->
+      <script src="populateMenu.js"></script>
+    </div>
+
+    <div id="content">
+      <!-- Automatically constructed from JSON -->
+    </div>
+
+    <script type="module" src="populatePage.js"></script>
+  </body>
+</html>
