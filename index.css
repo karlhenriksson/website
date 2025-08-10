@@ -36,6 +36,9 @@ body {
   padding: 0px;
   margin: 0px;
   min-height: 100vh;
+
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 #header {
