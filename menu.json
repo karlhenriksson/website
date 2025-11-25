@@ -5,33 +5,33 @@
   },
   {
     "name": "Desmos projects",
-    "link": "?page=desmos",
+    "link": "?page=desmos/desmos",
     "children": [
       {
         "name": "Tetris",
-        "link": "?page=tetris"
+        "link": "?page=desmos/tetris"
       },
       {
         "name": "3D renderers",
-        "link": "?page=3desmos"
+        "link": "?page=desmos/3desmos"
       },
       {
         "name": "Harmonograph",
-        "link": "?page=harmonograph"
+        "link": "?page=desmos/harmonograph"
       },
       {
         "name": "Sigmoid collection",
-        "link": "?page=sigmoid_collection"
+        "link": "?page=desmos/sigmoid_collection"
       }
     ]
   },
   {
     "name": "Programming projects",
-    "link": "?page=programming_projects",
+    "link": "?page=programming/programming_projects",
     "children": [
       {
         "name": "Secret Santa",
-        "link": "?page=secret_santa"
+        "link": "?page=programming/secret_santa"
       }
     ]
   },

@@ -12,15 +12,15 @@ import markdownit from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm";
 const md = markdownit({ html: false });
 
 {
-  function loadPageWithFallback(pageName, fallbackPage) {
-    return fetch(pageName)
-      .then((res) => (res.ok ? res.json() : Promise.reject()))
-      .catch(() =>
-        fetch(fallbackPage).then((res) => {
-          if (!res.ok) throw new Error("Fallback page failed to load");
-          return res.json();
-        })
-      );
+  async function loadPageWithFallback(pageName, fallbackPage) {
+    try {
+      const res = await fetch(pageName);
+      return await (res.ok ? res.json() : Promise.reject());
+    } catch {
+      const res_1 = await fetch(fallbackPage);
+      if (!res_1.ok) throw new Error("Fallback page failed to load");
+      return await res_1.json();
+    }
   }
 
   loadPageWithFallback(
@@ -38,7 +38,7 @@ const md = markdownit({ html: false });
       const pageObj = document.createElement("div");
       pageObj.classList.add("page");
 
-      // Loop through the page content
+      // Loop through the content of this page
       for (const element of pageJson.content) {
         const obj = document.createElement("div");
 
@@ -90,8 +90,9 @@ const md = markdownit({ html: false });
     document.querySelector("div#content").appendChild(fragment);
   });
 
-  // Parses the given text and returns an HTML node with the correct spans
-
+  /**
+   * Parses the given text and returns an HTML node with the correct spans
+   */
   function parseRichText(text) {
     return md.render(text); // Using a library right now, might want to try making my own later?
   }

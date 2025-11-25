@@ -1,0 +1,30 @@
+{
+  "title": "Harmonograph",
+  "pages": [
+    {
+      "content": [
+        {
+          "type": "title",
+          "text": "Harmonograph"
+        },
+        {
+          "type": "text",
+          "text": "I spent my 12th year in Germany, and while there I read about harmonographs. Essentially, they're made up of a number of pendulums (2 or 3) that move independently in different axes, and their position is then added up to produce a path. The images that form from simply adding harmonic motion together can be quite stunning, so naturally I wanted to build one. Unfortunately, I was never able to make  a physical harmonograph, so I eventually decided to make a harmono-graph in Desmos.\n\nThis is one of my most annotated and explained graphs, at least in terms of the input.\n\nLink: [Harmonograph](https://www.desmos.com/calculator/875211cd3d)"
+        },
+        {
+          "type": "text",
+          "text": "And here are some images of what it can produce:"
+        },
+        {
+          "type": "images",
+          "sources": [
+            "Page images/h0.png",
+            "Page images/h1.png",
+            "Page images/h2.png"
+          ],
+          "size": 7
+        }
+      ]
+    }
+  ]
+}

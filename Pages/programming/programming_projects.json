@@ -13,7 +13,7 @@
         },
         {
           "type": "text",
-          "text": "For now, the only project here is my [Secret Santa](?page=secret_santa) app. More to come later."
+          "text": "For now, the only project here is my [Secret Santa](?page=programming/secret_santa) app. More to come later."
         }
       ]
     },
@@ -37,7 +37,7 @@
         },
         {
           "type": "text",
-          "text": "**2017-2021 (11y-15y): Processing, Unity/C#, Python**. Somewhere around here is when I start learning Unity. I understant C# strong typing relatively quickly. I start making bad Discord bots in Python, which I find fun - it's the first time I actually use code *for* something. I also discover and learn Processing, which I see at the time as a bit like Python, but typed and with easy graphics. I start preferring that over Python as my \"mock-up\"-language."
+          "text": "**2017-2021 (11y-15y): Processing, Unity/C#, Python**. Somewhere around here is when I start learning Unity. I understand C#:s strong typing relatively quickly. I start making bad Discord bots in Python, which I find fun - it's the first time I actually use code *for* something. I also discover and learn Processing, which I see at the time as a bit like Python, but typed and with easy graphics. I start preferring that over Python as my \"mock-up\"-language."
         },
         {
           "type": "text",
@@ -45,7 +45,7 @@
         },
         {
           "type": "text",
-          "text": "**2025- (18y-): Pure C#, Unity/C#, HTML/CSS/JS, Python**. My programming courses in university use C#, and I really like it. I already knew most of the syntax from my earlier Unity experiments, but using it without all the Unity things felt really nice - it was like being back with Python, except this time I had a typed language with OOP capabilities. It's one of the only environments where I haven't felt like I had to fight the code to get what I wanted. I still occasionally use JS for mockups, and I'm using Python to program a Raspberry Pi to do my bidding. I also put off learning Git until now, but this is where I start understanding that system."
+          "text": "**2025- (18y-): Pure C#, Unity/C#, HTML/CSS/JS, Python**. My programming courses in university use C#, and I really like it. I already knew most of the syntax from my earlier Unity experiments, but using it without all the Unity things felt really nice - it was like being back with Python, except this time I had a typed language with OOP capabilities. It's one of the only environments where I haven't felt like I had to fight the code to get what I wanted. I still occasionally use JS for mockups (though I have started disliking it a bit), and I'm using Python to program a Raspberry Pi to do my bidding. I also put off learning Git until now, but this is where I start understanding how it works."
         },
         {
           "type": "text",

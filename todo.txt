@@ -1,1 +1,0 @@
-- Allow for folders in my pages directory, for easy navigation

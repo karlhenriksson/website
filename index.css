@@ -73,6 +73,7 @@ body {
 }
 #brandingImage {
   width: 50px;
+  box-shadow: rgba(0, 0, 0, 63) 0 0 4px;
 }
 
 #openMenu {
