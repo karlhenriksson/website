@@ -9,7 +9,7 @@
         },
         {
           "type": "text",
-          "text": "This website has 2 main reasons to be alive. It is 1) an exercise in HTML, CSS and JS, and 2) a place where I collect various projects and things I want to save in one spot. I quite like the style of the website, so I might use it for something else later if I find a good enough reason.\n\nThis website is hosted on GitHub pages. Because GHP doesn't allow server-side logic, I've had to make a slightly dubious workaround to avoid having to write lots of copies of the same HTML code. There's only one HTML document, and the page data is instead stored in JSON files. These files are then requested and handled client-side, rather than constructing everything on the server. Slightly yucky, and certainly slow on a bad connection, but I couldn't come up with a better solution.\n\nIt's quite an empty webpage for now, but I guess I'll put more stuff here if I feel like it'll fit."
+          "text": "This website has 2 main reasons to be alive. It is 1) an exercise in HTML, CSS and JS, and 2) a place where I collect various projects and things I want to save in one spot. I quite like the style of the website, so I might use it for something else later if I find a good enough reason.\n\nThis website is hosted on GitHub pages. Because GHP doesn't allow server-side logic, I've had to make a slightly dubious workaround to avoid having to write lots of copies of the same HTML code. There's only one HTML document, and the page data is instead stored in JSON files. These files are then requested and handled client-side, rather than constructing everything on the server. Slightly yucky, and certainly slow on a bad connection, but I couldn't come up with a better solution.\n\nIt's still kind of empty, but I'll put stuff here when I feel like it would fit."
         }
       ]
     },
@@ -21,12 +21,7 @@
         },
         {
           "type": "text",
-          "text": "I'm a swedish student born 2006, living and studying in Uppsala. That's about it. I like programming and mathematics, and am currently (as of summer 2025) trying to learn more about electronics and breadboard circuits.\n\nI mainly program in HTML/CSS/JS, Unity/C#, or Processing. I have also dabbled in Python, but I know very little about Python's unique syntax. I consider myself moderately proficient at Desmos."
-        },
-        {
-          "type": "image",
-          "source": "logo.png",
-          "size": 3
+          "text": "I'm a swedish student born 2006, living and studying in Uppsala. That's about it. I like programming and mathematics, and am currently (as of summer 2025) trying to learn more about electronics and breadboard circuits.\n\nI mainly program in C# and HTML/CSS/JS. I'm also dabbling in Python, but I'm very unfamiliar with Python's unique syntax. I consider myself moderately proficient at Desmos."
         }
       ]
     },
