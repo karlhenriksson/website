@@ -1,6 +1,8 @@
+/* Configurable colours */
 :root {
   --headerBackground: rgb(160, 160, 160);
   --headerDetails: rgb(120, 120, 120);
+  --headerDisclaimer: rgb(80, 80, 80);
 
   --menuItemText: black;
   --menuItemHover: rgb(90, 90, 90);
@@ -9,6 +11,7 @@
   --contentBackground: rgb(195, 223, 224);
 }
 
+/* Configurable fonts */
 @font-face {
   font-family: BrandingText;
   src: url(Fonts/Monda/static/Monda-SemiBold.ttf);
@@ -46,7 +49,6 @@ body {
 
   padding: 10px;
 }
-
 #mainHeader {
   display: flex;
   justify-content: space-around;
@@ -54,6 +56,7 @@ body {
   margin: 20px;
 }
 
+/* Branding styles */
 #branding {
   display: flex;
   align-items: center;
@@ -82,6 +85,18 @@ body {
   border-color: var(--headerDetails);
 }
 
+.headerDisclaimer {
+  color: var(--headerDisclaimer);
+  font-size: small;
+  padding: 0px 20px;
+  font-style: italic;
+  text-align: center;
+}
+.headerLink {
+  color: unset;
+}
+
+/* Lines between menu items */
 .menuItem {
   border-top: 1px solid var(--headerDetails);
 }
@@ -113,9 +128,12 @@ body {
   cursor: pointer;
 }
 
+/* Make folders add an indent for their children */
 .folderContent {
   padding-left: 20px;
 }
+
+/* === MAIN PAGE === */
 
 #content {
   background-color: var(--contentBackground);

@@ -21,26 +21,32 @@
           onclick="document.getElementById('menu').classList.toggle('hiddenMobile')"
         />
       </div>
-
-      <!-- Template for menu items -->
-      <div style="display: none" class="menuItem" id="menuItemTemplate">
-        <div class="menuItemDisplay">
-          <a href="index.html">Folder</a>
-          <img class="menuExpander" src="arrowDown.svg" />
-        </div>
-        <div class="folderContent hidden"></div>
+      <div id="menu" class="hiddenMobile">
+        <!-- Automatically constructed from JSON -->
       </div>
-
-      <div id="menu" class="hiddenMobile"></div>
-
-      <!-- Populate the menu -->
-      <script src="populateMenu.js"></script>
+      <div class="headerDisclaimer">
+        Questions or ideas? Email me at
+        <a class="headerLink" href="mailto:kfhenriksson@gmail.com"
+          >kfhenriksson@gmail.com</a
+        >
+      </div>
     </div>
 
     <div id="content">
       <!-- Automatically constructed from JSON -->
     </div>
 
+    <!-- Template for menu items -->
+    <div style="display: none" class="menuItem" id="menuItemTemplate">
+      <div class="menuItemDisplay">
+        <a href="index.html">Folder</a>
+        <img class="menuExpander" src="arrowDown.svg" />
+      </div>
+      <div class="folderContent hidden"></div>
+    </div>
+    <!-- Populate the menu -->
+    <script src="populateMenu.js"></script>
+    <!-- Construct the page content -->
     <script type="module" src="populatePage.js"></script>
   </body>
 </html>

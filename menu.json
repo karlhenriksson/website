@@ -26,6 +26,16 @@
     ]
   },
   {
+    "name": "Programming projects",
+    "link": "?page=programming_projects",
+    "children": [
+      {
+        "name": "Secret Santa",
+        "link": "?page=secret_santa"
+      }
+    ]
+  },
+  {
     "name": "Go to the GitHub repo",
     "link": "https://github.com/karlhenriksson/website"
   }

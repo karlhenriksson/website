@@ -3,16 +3,11 @@
  * Grabs info from the correct JSON file, then reads it into the page. Defaults to home
  */
 
-/**
- * = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- *
- * Import MarkdownIt for markdown in page text, with an extra rule to support underlined text
- */
-
 // Load from URL parameters, default to home if no target given
 const urlParameters = new URLSearchParams(window.location.search);
 const pageName = urlParameters.get("page") ?? "home";
 
+// Import markdown for formatting
 import markdownit from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm";
 const md = markdownit({ html: false });
 
@@ -91,7 +86,7 @@ const md = markdownit({ html: false });
       fragment.appendChild(pageObj);
     }
 
-    // Attack fragment, done!
+    // Attach fragment, done!
     document.querySelector("div#content").appendChild(fragment);
   });
 
