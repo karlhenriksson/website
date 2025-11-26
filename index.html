@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Karl Henriksson</title>
   </head>
-  <!-- https://properhoc.com as inspiration-->
   <body>
     <div id="header">
       <div id="mainHeader">
@@ -18,23 +17,25 @@
         <img
           id="openMenu"
           src="menu.svg"
-          onclick="document.getElementById('menu').classList.toggle('hiddenMobile')"
+          onclick="document.getElementById('toggleableOnMobile').classList.toggle('hiddenMobile')"
         />
       </div>
-      <div id="menu" class="hiddenMobile">
-        <!-- Automatically constructed from JSON -->
-      </div>
-      <div class="headerDisclaimer">
-        Want to contact me for some reason? Email me at
-        <a class="headerLink" href="mailto:kfhenriksson@gmail.com"
-          >kfhenriksson@gmail.com</a
-        >
-        or add a
-        <a
-          class="headerLink"
-          href="https://github.com/karlhenriksson/secretsanta/issues/new"
-          >Github issue</a
-        >
+      <div id="toggleableOnMobile" class="hiddenMobile">
+        <div id="menu">
+          <!-- Automatically constructed from JSON -->
+        </div>
+        <div class="headerDisclaimer">
+          Want to contact me for some reason? Email me at
+          <a class="headerLink" href="mailto:kfhenriksson@gmail.com"
+            >kfhenriksson@gmail.com</a
+          >
+          or add a
+          <a
+            class="headerLink"
+            href="https://github.com/karlhenriksson/secretsanta/issues/new"
+            >Github issue</a
+          >
+        </div>
       </div>
     </div>
 
