@@ -9,7 +9,7 @@
         },
         {
           "type": "text",
-          "text": "Oops - I seem to have forgotten to update a link somewhere. Let me know and I'll try to fix it!"
+          "text": "Oops - I seem to have forgotten to update a link somewhere. [Add a Github issue](https://github.com/karlhenriksson/website/issues/new) and I'll try to fix it!"
         }
       ]
     }
