@@ -1,42 +1,42 @@
 [
-  {
-    "name": "Home",
-    "link": "?page=home"
-  },
-  {
-    "name": "Desmos projects",
-    "link": "?page=desmos/desmos",
-    "children": [
-      {
-        "name": "Tetris",
-        "link": "?page=desmos/tetris"
-      },
-      {
-        "name": "3D renderers",
-        "link": "?page=desmos/3desmos"
-      },
-      {
-        "name": "Harmonograph",
-        "link": "?page=desmos/harmonograph"
-      },
-      {
-        "name": "Sigmoid collection",
-        "link": "?page=desmos/sigmoid_collection"
-      }
-    ]
-  },
-  {
-    "name": "Programming projects",
-    "link": "?page=programming/programming_projects",
-    "children": [
-      {
-        "name": "Secret Santa",
-        "link": "?page=programming/secret_santa"
-      }
-    ]
-  },
-  {
-    "name": "Go to the GitHub repo",
-    "link": "https://github.com/karlhenriksson/website"
-  }
+    {
+        "name": "Home",
+        "link": "?page=home"
+    },
+    {
+        "name": "Desmos projects",
+        "link": "?page=desmos/desmos",
+        "children": [
+            {
+                "name": "Tetris",
+                "link": "?page=desmos/tetris"
+            },
+            {
+                "name": "3D renderers",
+                "link": "?page=desmos/3desmos"
+            },
+            {
+                "name": "Harmonograph",
+                "link": "?page=desmos/harmonograph"
+            },
+            {
+                "name": "Sigmoid collection",
+                "link": "?page=desmos/sigmoid_collection"
+            }
+        ]
+    },
+    {
+        "name": "Programming projects",
+        "link": "?page=programming/programming_projects",
+        "children": [
+            {
+                "name": "Secret Santa",
+                "link": "?page=programming/secret_santa"
+            }
+        ]
+    },
+    {
+        "name": "Visit the GitHub repo",
+        "link": "https://github.com/karlhenriksson/website"
+    }
 ]

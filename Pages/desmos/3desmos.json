@@ -1,17 +1,17 @@
 {
-  "title": "3Desmos",
-  "pages": [
-    {
-      "content": [
+    "title": "3Desmos",
+    "pages": [
         {
-          "type": "title",
-          "text": "3D renderers in Desmos"
-        },
-        {
-          "type": "text",
-          "text": "The first \"big\" project i did in Desmos was a 3D renderer. I unfortunately didn't know a lot about projective geometry *or* efficient Desmos:ing, so I ended up with quite a monstrosity. I also did a lot of it in the mobile app, which means I ended up writing a 471 character expression on a small phone screen. I could only see about 6% of the expression at any given time, so it's a mystery how I didn't make some mistake while writing the incredibly repetitive expression. Anyways, I got a terrible mesh renderer working, and even got to backface culling before realizing how objectively terrible the code was to modify. So then I left it for a while, until I actually learnt a little bit about projective geometry in our local maths club. After that, I decided to make a new and improved renderer, which was much more flexible and didn't mess up as much at the extremes. I decided to link to both, although I vastly prefer the second graph.\n\nLinks: [Version 1](https://www.desmos.com/calculator/893e6198ae), [Version 2](https://www.desmos.com/calculator/b37c222d99)"
+            "content": [
+                {
+                    "type": "title",
+                    "text": "3D renderers in Desmos"
+                },
+                {
+                    "type": "text",
+                    "text": "The first \"big\" project i did in Desmos was a 3D renderer. I unfortunately didn't know a lot about projective geometry *or* efficient Desmos:ing, so I ended up with quite a monstrosity. I also did a lot of it in the mobile app, which means I ended up writing a 471 character expression on a small phone screen. I could only see about 6% of the expression at any given time, so it's a mystery how I didn't make some mistake while writing the incredibly repetitive expression. Anyways, I got a terrible mesh renderer working, and even got to backface culling before realizing how objectively terrible the code was to modify. So then I left it for a while, until I actually learnt a little bit about projective geometry in our local maths club. After that, I decided to make a new and improved renderer, which was much more flexible and didn't mess up as much at the extremes. I decided to link to both, although I vastly prefer the second graph.\n\nLinks: [Version 1](https://www.desmos.com/calculator/893e6198ae), [Version 2](https://www.desmos.com/calculator/b37c222d99)"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

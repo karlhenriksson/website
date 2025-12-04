@@ -1,17 +1,17 @@
 {
-  "title": "404 - not found",
-  "pages": [
-    {
-      "content": [
+    "title": "404 - not found",
+    "pages": [
         {
-          "type": "title",
-          "text": "404 - not found"
-        },
-        {
-          "type": "text",
-          "text": "The webpage you requested doesn't exist."
+            "content": [
+                {
+                    "type": "title",
+                    "text": "404 - not found"
+                },
+                {
+                    "type": "text",
+                    "text": "The page you requested doesn't exist."
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
