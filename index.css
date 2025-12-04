@@ -26,10 +26,6 @@
     font-family: ContentText;
 }
 
-a {
-    color: var(--contentLinks);
-}
-
 .hidden {
     display: none;
 }
@@ -66,12 +62,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    text-decoration: none; /* Get rid of the underline from using an a tag */
 }
 #branding:hover {
     cursor: pointer;
 }
 #brandingText {
-    margin: 5px;
+    margin: 15px;
     color: whitesmoke;
     font-family: BrandingText;
     font-size: 20px;
@@ -81,14 +79,11 @@ body {
     box-shadow: rgba(0, 0, 0, 63) 0 0 4px;
 }
 
-#openMenu {
+#openMenuButton {
     width: 40px;
     height: 40px;
 
-    border-radius: 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--headerDetails);
+    border: 1px solid var(--headerDetails);
 }
 
 .headerDisclaimer {
@@ -98,8 +93,9 @@ body {
     font-style: italic;
     text-align: center;
 }
-.headerLink {
+.mutedLink {
     color: unset;
+    font-size: unset;
 }
 
 /* Lines between menu items */
@@ -119,8 +115,6 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
-
-    font-size: 16px;
 
     color: var(--menuItemText);
     text-decoration: none;
@@ -146,6 +140,10 @@ body {
     flex: 2;
 }
 
+#content a {
+    color: var(--contentLinks);
+}
+
 .page {
     background-color: white;
     margin: 10px;
@@ -154,11 +152,16 @@ body {
 .pageHeader {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin: 10px 0px;
 }
+.pageHeader > p {
+    margin: unset;
+}
+
 .pageText {
     margin-bottom: 10px;
 }
+
 .pageImage {
     display: flex;
     justify-content: center;
@@ -168,6 +171,7 @@ body {
 .pageImage > img {
     width: 100%;
 }
+
 .pageCode {
     border: 1px black solid;
     padding: 7px;
