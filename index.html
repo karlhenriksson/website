@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="index.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <title>Karl Henriksson</title>
-  </head>
-  <body>
-    <div id="header">
-      <div id="mainHeader">
-        <div id="branding" onclick="window.location.href = 'index.html'">
-          <img id="brandingImage" src="logo.png" />
-          <div id="brandingText">Karl Henriksson</div>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <title>Karl Henriksson</title>
+    </head>
+    <body>
+        <div id="header">
+            <div id="mainHeader">
+                <div
+                    id="branding"
+                    onclick="window.location.href = 'index.html'">
+                    <img id="brandingImage" src="logo.png" />
+                    <div id="brandingText">Karl Henriksson</div>
+                </div>
+                <img
+                    id="openMenu"
+                    src="menu.svg"
+                    onclick="document.getElementById('toggleableOnMobile').classList.toggle('hiddenMobile')" />
+            </div>
+            <div id="toggleableOnMobile" class="hiddenMobile">
+                <div id="menu">
+                    <!-- Automatically constructed from JSON -->
+                </div>
+                <div class="headerDisclaimer">
+                    Want to contact me regarding the website? Email me at
+                    <a class="headerLink" href="mailto:kfhenriksson@gmail.com"
+                        >kfhenriksson@gmail.com</a
+                    >
+                    or add a
+                    <a
+                        class="headerLink"
+                        href="https://github.com/karlhenriksson/website/issues/new"
+                        >Github issue</a
+                    >
+                </div>
+            </div>
         </div>
-        <img
-          id="openMenu"
-          src="menu.svg"
-          onclick="document.getElementById('toggleableOnMobile').classList.toggle('hiddenMobile')"
-        />
-      </div>
-      <div id="toggleableOnMobile" class="hiddenMobile">
-        <div id="menu">
-          <!-- Automatically constructed from JSON -->
-        </div>
-        <div class="headerDisclaimer">
-          Want to contact me for some reason? Email me at
-          <a class="headerLink" href="mailto:kfhenriksson@gmail.com"
-            >kfhenriksson@gmail.com</a
-          >
-          or add a
-          <a
-            class="headerLink"
-            href="https://github.com/karlhenriksson/website/issues/new"
-            >Github issue</a
-          >
-        </div>
-      </div>
-    </div>
 
-    <div id="content">
-      <!-- Automatically constructed from JSON -->
-    </div>
+        <div id="content">
+            <!-- Automatically constructed from JSON -->
+        </div>
 
-    <!-- Template for menu items -->
-    <div style="display: none" class="menuItem" id="menuItemTemplate">
-      <div class="menuItemDisplay">
-        <a href="index.html">Folder</a>
-        <img class="menuExpander" src="arrowDown.svg" />
-      </div>
-      <div class="folderContent hidden"></div>
-    </div>
-    <!-- Populate the menu -->
-    <script src="populateMenu.js"></script>
-    <!-- Construct the page content -->
-    <script type="module" src="populatePage.js"></script>
-  </body>
+        <!-- Template for menu items -->
+        <div style="display: none" class="menuItem" id="menuItemTemplate">
+            <div class="menuItemDisplay">
+                <a href="index.html">Folder</a>
+                <img class="menuExpander" src="arrowDown.svg" />
+            </div>
+            <div class="folderContent hidden"></div>
+        </div>
+        <!-- Populate the menu -->
+        <script src="populateMenu.js"></script>
+        <!-- Construct the page content -->
+        <script type="module" src="populatePage.js"></script>
+    </body>
 </html>

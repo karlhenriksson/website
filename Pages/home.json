@@ -1,41 +1,37 @@
 {
-  "title": "Home",
-  "pages": [
-    {
-      "content": [
+    "title": "Home",
+    "pages": [
         {
-          "type": "title",
-          "text": "About this webpage"
+            "content": [
+                {
+                    "type": "title",
+                    "text": "About me"
+                },
+                {
+                    "type": "text",
+                    "text": "Email: [kfhenriksson@gmail.com](mailto:kfhenriksson@gmail.com)  \nDiscord: [k_henr](https://discordapp.com/users/772538117898895421)"
+                },
+                {
+                    "type": "text",
+                    "text": "I'm a swedish student born 2006, living and studying in Uppsala. That's about it. I like programming and mathematics, and am currently (as of autumn 2025) also trying to learn more about electronics and breadboard circuits.  \n  \nTo my memory, I have programmed since when I was around 8 years old, mostly just for fun. But occasionally I've been able to find applications for my programs."
+                },
+                {
+                    "type": "text",
+                    "text": "I have primarily used:  \n\\- C#  \n\\- HTML/CSS/JS  \n\\- Python  \n\\- Processing/Java  \n(For more information, see the page about [my programming projects](?page=programming/programming_projects))"
+                }
+            ]
         },
         {
-          "type": "text",
-          "text": "This website has 2 main reasons to be alive. It is 1) an exercise in HTML, CSS and JS, and 2) a place where I collect various projects and things I want to save in one spot. I quite like the style of the website, so I might use it for something else later if I find a good enough reason.\n\nThis website is hosted on GitHub pages. Because GHP doesn't allow server-side logic, I've had to make a slightly dubious workaround to avoid having to write lots of copies of the same HTML code. There's only one HTML document, and the page data is instead stored in JSON files. These files are then requested and handled client-side, rather than constructing everything on the server. Slightly yucky, and certainly slow on a bad connection, but I couldn't come up with a better solution.\n\nIt's still kind of empty, but I'll put stuff here when I feel like it would fit."
+            "content": [
+                {
+                    "type": "title",
+                    "text": "About this webpage"
+                },
+                {
+                    "type": "text",
+                    "text": "This website has 2 main reasons to be alive. It is 1) an exercise in HTML, CSS and JS, and 2) a place where I collect various projects and things I want to save in one spot. I quite like the style of the website, so I might use it as some kind of resume website later.  \n  \nThe site is hosted on GitHub pages. Because GHP doesn't allow server-side logic, I've had to make a slightly dubious workaround to avoid having to write lots of copies of the same HTML code. There's only one HTML document, and the page data is instead stored in JSON files. These files are then requested and handled client-side, rather than constructing everything on the server. Slightly yucky, and relatively slow on a bad connection, but I couldn't come up with a better solution. I'll set up a more proper solution at some point in the future.  \n  \nIt's still kind of empty, but I'll put stuff here when I feel like it would fit."
+                }
+            ]
         }
-      ]
-    },
-    {
-      "content": [
-        {
-          "type": "title",
-          "text": "Who am I?"
-        },
-        {
-          "type": "text",
-          "text": "I'm a swedish student born 2006, living and studying in Uppsala. That's about it. I like programming and mathematics, and am currently (as of summer 2025) trying to learn more about electronics and breadboard circuits.\n\nI mainly program in C# and HTML/CSS/JS. I'm also dabbling in Python, but I'm very unfamiliar with Python's unique syntax. I consider myself moderately proficient at Desmos."
-        }
-      ]
-    },
-    {
-      "content": [
-        {
-          "type": "title",
-          "text": "Credits"
-        },
-        {
-          "type": "text",
-          "text": "Programming done by me (Karl Henriksson)\n\nIcons and fonts from Google Fonts\n\nHosted on Gihub Pages"
-        }
-      ]
-    }
-  ]
+    ]
 }

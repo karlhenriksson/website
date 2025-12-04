@@ -1,17 +1,17 @@
 {
-  "title": "Unknown page",
-  "pages": [
-    {
-      "content": [
+    "title": "Unknown page",
+    "pages": [
         {
-          "type": "title",
-          "text": "Unknown page"
-        },
-        {
-          "type": "text",
-          "text": "Oops - I seem to have forgotten to update a link somewhere. [Add a Github issue](https://github.com/karlhenriksson/website/issues/new) and I'll try to fix it!"
+            "content": [
+                {
+                    "type": "title",
+                    "text": "Unknown page"
+                },
+                {
+                    "type": "text",
+                    "text": "Oops - I seem to have forgotten to update a link somewhere. [Add a Github issue](https://github.com/karlhenriksson/website/issues/new) or [send me an email](mailto:kfhenriksson@gmail.com) and I'll try to fix it!"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
