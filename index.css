@@ -32,6 +32,7 @@ a,
 b,
 u {
     font-size: 16px;
+    line-height: 120%;
 }
 
 .hidden {
