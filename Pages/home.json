@@ -9,15 +9,15 @@
                 },
                 {
                     "type": "text",
-                    "text": "Email: [kfhenriksson@gmail.com](mailto:kfhenriksson@gmail.com)  \nDiscord: [k_henr](https://discordapp.com/users/772538117898895421)"
+                    "text": "Email: [kfhenriksson@gmail.com](mailto:kfhenriksson@gmail.com)  \nGithub: [karlhenriksson](https://github.com/karlhenriksson)  \nDiscord: [k_henr](https://discordapp.com/users/772538117898895421)"
                 },
                 {
                     "type": "text",
-                    "text": "I'm a swedish student born 2006, living and studying in Uppsala. That's about it. I like programming and mathematics, and am currently (as of autumn 2025) also trying to learn more about electronics and breadboard circuits.  \n  \nTo my memory, I have programmed since when I was around 8 years old, mostly just for fun. But occasionally I've been able to find applications for my programs."
+                    "text": "I'm a swedish student born 2006, living and studying in Uppsala at the moment. I like programming and mathematics, and am currently (as of autumn 2025) also trying to learn more about electronics and breadboard circuits.  \n  \nTo my memory, I have programmed since when I was around 8 years old, mostly just for fun. But occasionally I've been able to find applications for my programs."
                 },
                 {
                     "type": "text",
-                    "text": "I have primarily used:  \n\\- C#  \n\\- HTML/CSS/JS  \n\\- Python  \n\\- Processing/Java  \n(For more information, see the page about [my programming projects](?page=programming/programming_projects))"
+                    "text": "Familiar programming languages:  \n\\- C#  \n\\- HTML/CSS/JS  \n\\- Python  \n\\- Processing/Java  \n(For more information, see [my programming projects](?page=programming/programming_projects))"
                 }
             ]
         },
