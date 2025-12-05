@@ -42,6 +42,8 @@ u {
 }
 
 body {
+    background: var(--contentBackground); /* Fix overscrolling color */
+
     display: flex;
     flex-direction: column;
 
@@ -83,7 +85,7 @@ body {
     font-size: 20px;
 }
 #brandingImage {
-    width: 50px;
+    width: 40px;
     border: 1px solid var(--headerDetails);
 }
 
