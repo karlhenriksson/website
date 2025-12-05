@@ -26,6 +26,14 @@
     font-family: ContentText;
 }
 
+p,
+i,
+a,
+b,
+u {
+    font-size: 16px;
+}
+
 .hidden {
     display: none;
 }
@@ -156,6 +164,7 @@ body {
 }
 .pageHeader > p {
     margin: unset;
+    font-size: 36px;
 }
 
 .pageText {
@@ -196,6 +205,14 @@ body {
 
     body {
         flex-direction: row;
+    }
+
+    p,
+    i,
+    a,
+    b,
+    u {
+        font-size: calc(max(1.25vw, 16px));
     }
 
     #header {
