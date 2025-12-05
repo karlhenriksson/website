@@ -2,7 +2,7 @@
 :root {
     --headerBackground: rgb(160, 160, 160);
     --headerDetails: rgb(120, 120, 120);
-    --headerDisclaimer: rgb(80, 80, 80);
+    --headerDisclaimer: rgb(60, 60, 60);
 
     --menuItemText: black;
     --menuItemHover: rgb(90, 90, 90);
@@ -78,13 +78,13 @@ body {
 }
 #brandingText {
     margin: 15px;
-    color: whitesmoke;
+    color: rgb(225, 245, 245);
     font-family: BrandingText;
     font-size: 20px;
 }
 #brandingImage {
     width: 50px;
-    box-shadow: rgba(0, 0, 0, 63) 0 0 4px;
+    border: 1px solid var(--headerDetails);
 }
 
 #openMenuButton {
@@ -160,7 +160,7 @@ body {
 .pageHeader {
     font-size: 40px;
     font-weight: bold;
-    margin: 10px 0px;
+    margin-bottom: 30px;
 }
 .pageHeader > p {
     margin: unset;
@@ -193,7 +193,7 @@ body {
 @media (min-width: 500px) {
     .page {
         margin: 30px;
-        padding: 30px;
+        padding: 60px;
     }
 }
 
