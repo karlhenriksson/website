@@ -9,7 +9,7 @@
     --menuExpandFolderHover: rgb(120, 120, 120);
 
     --contentBackground: rgb(195, 223, 224);
-    --contentLinks: rgb(11, 78, 133);
+    --links: rgb(11, 78, 133);
 }
 
 /* Configurable fonts */
@@ -151,8 +151,8 @@ body {
     flex: 2;
 }
 
-#content a {
-    color: var(--contentLinks);
+a {
+    color: var(--links);
 }
 
 .page {
@@ -192,6 +192,27 @@ body {
     font-size: 15px;
 }
 
+.pageIconLinkList {
+    margin-bottom: 10px;
+}
+.pageIconLinkListElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+
+    color: unset;
+    text-decoration: none;
+}
+
+.pageIconLinkListElement > img {
+    height: 40px;
+}
+
+.pageIconLinkLabel {
+    margin: 0 30px;
+}
+
 /* Medium size */
 @media (min-width: 500px) {
     .page {
@@ -215,7 +236,7 @@ body {
     a,
     b,
     u {
-        font-size: calc(max(1.25vw, 16px));
+        font-size: calc(max(1.25vw, 18px));
     }
 
     #header {

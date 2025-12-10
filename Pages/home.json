@@ -8,8 +8,24 @@
                     "text": "About me"
                 },
                 {
-                    "type": "text",
-                    "text": "Email: [kfhenriksson@gmail.com](mailto:kfhenriksson@gmail.com)  \nGithub: [karlhenriksson](https://github.com/karlhenriksson)  \nDiscord: [k_henr](https://discordapp.com/users/772538117898895421)"
+                    "type": "iconLinkList",
+                    "content": [
+                        {
+                            "icon": "logo.png",
+                            "label": "Mail: kfhenriksson@gmail.com",
+                            "link": "mailto:kfhenriksson@gmail.com"
+                        },
+                        {
+                            "icon": "logo.png",
+                            "label": "Github: karlhenriksson",
+                            "link": "https://github.com/karlhenriksson"
+                        },
+                        {
+                            "icon": "logo.png",
+                            "label": "Discord: k_henr",
+                            "link": "https://discordapp.com/users/772538117898895421"
+                        }
+                    ]
                 },
                 {
                     "type": "text",

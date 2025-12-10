@@ -29,7 +29,7 @@
                 },
                 {
                     "type": "text",
-                    "text": "**2014-2016 (8y-10y): Scratch**. (Yes, I do count scratch as a programming language). I was introduced to Scratch programming (and a number of other, similar, systems) in school. I tended to sit for way too long and make elaborate platformers and copies of other simple games (I remember a Polka dot game that I was quite proud of). It was a fun time, but looking back, I actually already felt like I wanted some basic OOP - not in those terms, of course, but I wanted variables-per-object, and a way to inherit behaviour."
+                    "text": "**2014-2016 (8y-10y): Scratch**. (Yes, I do count scratch as a programming language). I was introduced to Scratch programming (and a number of other similar systems) in school. I tended to sit for way too long and make elaborate platformers and copies of other simple games (I remember a Polka dot game that I was quite proud of). It was a fun time, but looking back, I actually already felt like I wanted some basic OOP - not in those terms, of course, but I wanted variables-per-object, and a way to inherit behaviour between objects."
                 },
                 {
                     "type": "text",
@@ -49,7 +49,7 @@
                 },
                 {
                     "type": "text",
-                    "text": "As of 2025, I'm considering switching to Java over C#. I'm somewhat familiar with Java syntax from Processing, but the lack of features like computed properties and other \"QOL\" things kind of put me off. My Java projects have felt more like fighting the code again, especially compared to C#. But Java being so cross-platform is nice. I've also briefly pondered Rust, but that seems like an amalgamation of paradigms that doesn't know what it wants, and I need my inheritance."
+                    "text": "As of 2025, I'm considering switching to Java over C#. The cross-platform compatibility is nice to have, but the lack of \"QOL\" features like computed properties are kind of annoying. I'm doing some Java on the side right now, and I'll see if I start liking it more than C#.  \nI've also briefly pondered Rust, but that seems like an amalgamation of paradigms that doesn't know what it wants, and I need my inheritance."
                 }
             ]
         }

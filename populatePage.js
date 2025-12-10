@@ -12,88 +12,111 @@ import markdownit from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm";
 const md = markdownit({ html: false });
 
 {
-  async function loadPageWithFallback(pageName, fallbackPage) {
-    try {
-      const res = await fetch(pageName);
-      return await (res.ok ? res.json() : Promise.reject());
-    } catch {
-      const res_1 = await fetch(fallbackPage);
-      if (!res_1.ok) throw new Error("Fallback page failed to load");
-      return await res_1.json();
+    async function loadPageWithFallback(pageName, fallbackPage) {
+        try {
+            const res = await fetch(pageName);
+            return await (res.ok ? res.json() : Promise.reject());
+        } catch {
+            const res_1 = await fetch(fallbackPage);
+            if (!res_1.ok) throw new Error("Fallback page failed to load");
+            return await res_1.json();
+        }
     }
-  }
 
-  loadPageWithFallback(
-    `Pages/${pageName}.json`,
-    "Pages/unknown_page.json"
-  ).then((json) => {
-    // First, set the head title
-    document.title = json.title + " | Karl Henriksson";
+    loadPageWithFallback(
+        `Pages/${pageName}.json`,
+        "Pages/unknown_page.json"
+    ).then((json) => {
+        // First, set the head title
+        document.title = json.title + " | Karl Henriksson";
 
-    // Make a new document fragment
-    const fragment = new DocumentFragment();
+        // Make a new document fragment
+        const fragment = new DocumentFragment();
 
-    // Loop through all the pages
-    for (const pageJson of json.pages) {
-      const pageObj = document.createElement("div");
-      pageObj.classList.add("page");
+        // Loop through all the pages
+        for (const pageJson of json.pages) {
+            const pageObj = document.createElement("div");
+            pageObj.classList.add("page");
 
-      // Loop through the content of this page
-      for (const element of pageJson.content) {
-        const obj = document.createElement("div");
+            // Loop through the content of this page
+            for (const element of pageJson.content) {
+                const obj = document.createElement("div");
 
-        switch (element.type) {
-          case "title":
-            obj.classList.add("pageHeader");
-            obj.innerHTML = parseRichText(element.text);
-            break;
+                switch (element.type) {
+                    case "title":
+                        obj.classList.add("pageHeader");
+                        obj.innerHTML = parseRichText(element.text);
+                        break;
 
-          case "text":
-            obj.classList.add("pageText");
-            obj.innerHTML = parseRichText(element.text);
-            break;
+                    case "text":
+                        obj.classList.add("pageText");
+                        obj.innerHTML = parseRichText(element.text);
+                        break;
 
-          case "image":
-            obj.classList.add("pageImage");
-            const img = document.createElement("img");
-            img.src = element.source;
-            img.style.maxWidth = element.size + "cm";
-            obj.appendChild(img);
-            break;
+                    case "image":
+                        obj.classList.add("pageImage");
+                        const img = document.createElement("img");
+                        img.src = element.source;
+                        img.style.maxWidth = element.size + "cm";
+                        obj.appendChild(img);
+                        break;
 
-          case "images":
-            obj.classList.add("pageImage");
-            for (const src of element.sources) {
-              const img = document.createElement("img");
-              img.src = src;
-              img.style.maxWidth = element.size + "cm";
-              obj.appendChild(img);
+                    case "images":
+                        obj.classList.add("pageImage");
+                        for (const src of element.sources) {
+                            const img = document.createElement("img");
+                            img.src = src;
+                            img.style.maxWidth = element.size + "cm";
+                            obj.appendChild(img);
+                        }
+                        break;
+
+                    case "iconLinkList":
+                        obj.classList.add("pageIconLinkList");
+                        for (const el of element.content) {
+                            const entry = document.createElement("a");
+                            entry.href = el.link;
+                            entry.classList.add("pageIconLinkListElement");
+
+                            const icon = document.createElement("img");
+                            icon.src = el.icon;
+
+                            const label = document.createElement("p");
+                            label.innerText = el.label;
+                            label.classList.add("pageIconLinkLabel");
+
+                            entry.appendChild(icon);
+                            entry.appendChild(label);
+
+                            obj.appendChild(entry);
+                        }
+                        break;
+
+                    case "code":
+                        obj.classList.add("pageCode");
+                        obj.innerText = element.text;
+                        break;
+
+                    default:
+                        console.error(
+                            `Invalid page element type '${element.type}'!`
+                        );
+                }
+
+                pageObj.appendChild(obj);
             }
-            break;
 
-          case "code":
-            obj.classList.add("pageCode");
-            obj.innerText = element.text;
-            break;
-
-          default:
-            console.error(`Invalid page element type '${element.type}'!`);
+            fragment.appendChild(pageObj);
         }
 
-        pageObj.appendChild(obj);
-      }
+        // Attach fragment, done!
+        document.querySelector("div#content").appendChild(fragment);
+    });
 
-      fragment.appendChild(pageObj);
+    /**
+     * Parses the given text and returns an HTML node with the correct spans
+     */
+    function parseRichText(text) {
+        return md.render(text); // Using a library right now, might want to try making my own later?
     }
-
-    // Attach fragment, done!
-    document.querySelector("div#content").appendChild(fragment);
-  });
-
-  /**
-   * Parses the given text and returns an HTML node with the correct spans
-   */
-  function parseRichText(text) {
-    return md.render(text); // Using a library right now, might want to try making my own later?
-  }
 }
