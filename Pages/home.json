@@ -5,23 +5,35 @@
             "content": [
                 {
                     "type": "title",
+                    "text": "About this webpage"
+                },
+                {
+                    "type": "text",
+                    "text": "This website has 2 main reasons to be alive. It is 1) an exercise in HTML, CSS and JS, and 2) a place where I collect various projects and things I want to save in one spot. I quite like the style of the website, so I might use it as some kind of resume website later.  \n  \nThe site is hosted on GitHub pages. Because GHP doesn't allow server-side logic, I've had to make a slightly dubious workaround to avoid having to write lots of copies of the same HTML code. There's only one HTML document, and the page data is instead stored in JSON files. These files are then requested and handled client-side, rather than constructing everything on the server. Slightly yucky, and relatively slow on a bad connection, but I couldn't come up with a better solution. I'll set up a more proper solution at some point in the future.  \n  \nIt's still kind of empty, but I'll put stuff here when I feel like it would fit."
+                }
+            ]
+        },
+        {
+            "content": [
+                {
+                    "type": "title",
                     "text": "About me"
                 },
                 {
                     "type": "iconLinkList",
                     "content": [
                         {
-                            "icon": "logo.png",
+                            "icon": "Icons/mail.svg",
                             "label": "Mail: kfhenriksson@gmail.com",
                             "link": "mailto:kfhenriksson@gmail.com"
                         },
                         {
-                            "icon": "logo.png",
+                            "icon": "Icons/github.svg",
                             "label": "Github: karlhenriksson",
                             "link": "https://github.com/karlhenriksson"
                         },
                         {
-                            "icon": "logo.png",
+                            "icon": "Icons/discord.svg",
                             "label": "Discord: k_henr",
                             "link": "https://discordapp.com/users/772538117898895421"
                         }
@@ -34,18 +46,6 @@
                 {
                     "type": "text",
                     "text": "Familiar programming languages:  \n\\- C#  \n\\- HTML/CSS/JS  \n\\- Python  \n\\- Processing/Java  \n(For more information, see [my programming projects](?page=programming/programming_projects))"
-                }
-            ]
-        },
-        {
-            "content": [
-                {
-                    "type": "title",
-                    "text": "About this webpage"
-                },
-                {
-                    "type": "text",
-                    "text": "This website has 2 main reasons to be alive. It is 1) an exercise in HTML, CSS and JS, and 2) a place where I collect various projects and things I want to save in one spot. I quite like the style of the website, so I might use it as some kind of resume website later.  \n  \nThe site is hosted on GitHub pages. Because GHP doesn't allow server-side logic, I've had to make a slightly dubious workaround to avoid having to write lots of copies of the same HTML code. There's only one HTML document, and the page data is instead stored in JSON files. These files are then requested and handled client-side, rather than constructing everything on the server. Slightly yucky, and relatively slow on a bad connection, but I couldn't come up with a better solution. I'll set up a more proper solution at some point in the future.  \n  \nIt's still kind of empty, but I'll put stuff here when I feel like it would fit."
                 }
             ]
         }
