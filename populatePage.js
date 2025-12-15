@@ -28,7 +28,7 @@ const md = markdownit({ html: false });
         "Pages/unknown_page.json"
     ).then((json) => {
         // First, set the head title
-        document.title = json.title + " | Karl Henriksson";
+        document.title = json.title + " | Karl Henriksson"; // TODO: When I buy a domain, replace this with that
 
         // Make a new document fragment
         const fragment = new DocumentFragment();
